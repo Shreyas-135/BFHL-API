@@ -1,16 +1,13 @@
 
-// server.js
 const express = require("express");
 const app = express();
 
 app.use(express.json());
 
-// --- UPDATE THESE with your details before deploying ---
-const USER_FULLNAME = "john_doe";        // full name, lowercase and underscores
-const USER_DOB_DDMMYYYY = "17091999";   // ddmmyyyy
+const USER_FULLNAME = "john_doe";        
+const USER_DOB_DDMMYYYY = "17091999";   
 const USER_EMAIL = "john@xyz.com";
 const USER_ROLL = "ABCD123";
-// -------------------------------------------------------
 
 const buildUserId = () => `${USER_FULLNAME}_${USER_DOB_DDMMYYYY}`;
 
