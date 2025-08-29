@@ -1,16 +1,15 @@
 
-// api/bfhl.js
 export default function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ is_success: false, message: "Method Not Allowed" });
   }
 
-  // --- UPDATE THESE with your details ---
-  const USER_FULLNAME = "john_doe";       // lowercase with underscores
-  const USER_DOB_DDMMYYYY = "17091999";  // ddmmyyyy
+
+  const USER_FULLNAME = "john_doe";      
+  const USER_DOB_DDMMYYYY = "17091999";  
   const USER_EMAIL = "john@xyz.com";
   const USER_ROLL = "ABCD123";
-  // --------------------------------------
+
 
   const buildUserId = () => `${USER_FULLNAME}_${USER_DOB_DDMMYYYY}`;
 
@@ -82,3 +81,4 @@ export default function handler(req, res) {
     concat_string
   });
 }
+
