@@ -1,6 +1,6 @@
 # BFHL API
 
-This is the Node.js (Express) solution for the VIT Full Stack Question Paper.
+This is the Node.js (Express) solution for the Bajaj Full Stack Question Paper.
 
 ## Run Locally
 
@@ -16,7 +16,6 @@ curl -X POST http://localhost:3000/bfhl   -H "Content-Type: application/json"   
 ```
 
 ## Deploy
-
-- Push to GitHub
-- Deploy on Railway/Render/Heroku
-- Ensure the route `/bfhl` works and returns status 200
+Push to GitHub
+Deploy on Vercel/Heroku/Netifly
+Ensure the route `/bfhl` works and returns status 200
